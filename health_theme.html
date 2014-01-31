@@ -1,0 +1,2072 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<title>Barriers and Pathways to a Better Health System</title>
+<style type="text/css">
+<!--
+    body { background: #D0E0F0 ; color: black }
+    dt { font-style: italic }
+    p.annotation { font-style: italic }
+    p.comment { font-style: italic }
+    hr { width: 60% }
+   .emph { font-style: italic }
+-->
+</style>
+
+</head>
+<body>
+
+<h1>Barriers and Pathways to a Better Health System</h1>
+
+<p>by Andrew Oram</p>
+<p>DRAFT 0.2, last updated 31 January 2014</p>
+
+<p>
+
+Table of contents:
+
+</p>
+
+<ul>
+<li><a href="#device_sensor">Devices, sensors, and the patient-centered medical home</a>
+<ul>
+<li><a href="#qs_selves">From the Quantified Self to Our Selves</a></li>
+<li><a href="#individual_home">The role of the individual</a></li>
+<li><a href="#barrier_device">Barriers</a></li>
+</ul>
+</li>
+<li><a href="#evidence_telemedicine">Evidence-based medicine, decision support, and telemedicine</a>
+<ul>
+<li><a href="#ehr">Electronic records</a></li>
+<li><a href="#telemedicine">Telemedicine</a></li>
+<li><a href="#ehr_barrier">Barriers</a></li>
+</ul>
+</li>
+<li><a href="#data_exchange">Data exchange</a>
+<ul>
+<li><a href="#aco_integrated">Accountable care organizations and other integrated care</a></li>
+<li><a href="#hie">Health information exchanges</a></li>
+<li><a href="#open_data">Open data</a></li>
+<li><a href="#clinical_research">Revolutions in clinical research</a></li>
+<li><a href="#data_exchange_barrier">Barriers</a></li>
+</ul>
+</li>
+<li><a href="#engagement_games">Patient engagement and health-enhancing games</a>
+<ul>
+<li><a href="#gamification">Gamification</a></li>
+<li><a href="#transparency">Transparency</a></li>
+<li><a href="#patient_control">Patient control over data</a></li>
+</ul>
+</li>
+<li><a href="#closing">General closing thoughts</a></li>
+</ul>
+
+<p>
+
+A constellation of new medical practices and technologies, resting on
+a firm research foundation and rolling out slowly into common
+practice, holds the promise of better health for everyone. Underlying
+nearly all these practices are the collection and sharing of data,
+sometimes even more than the practice of medicine.
+
+</p>
+<p>
+
+What technologies show the most promise? Why do some seem to languish
+despite their apparent advantages? How do all these things depend on
+each other, and what technologies and practices need to be adopted in
+tandem?
+
+</p>
+<p>
+
+The larger trends in these ground-breaking approaches--as well as the
+things that stand in their way--form the subjects of this paper. This
+is not a catalog of apps or technologies, but a deep investigation of
+their potential. The paper's themes will come home to lots of readers:
+
+</p>
+
+<ul>
+
+<li>
+
+Anyone with a career in medicine and the enormous health care
+industries will see big changes in the field. These industries aren't
+likely to shrink a great deal or be disintermediated like travel
+agents, bookstores, many newspapers, or much of the record industry,
+but some of their functions will disappear while others leap into the
+twenty-first century.
+
+</li>
+
+<li>
+
+Computer experts, data scientists, and other hi-techies will <a
+href="http://www.healthcareitnews.com/news/big-growth-forecast-health-it-market">stream
+into health care</a>. As the book <a
+href="http://shop.oreilly.com/product/0636920020110.do">Hacking
+Healthcare</a> explains, they will stumble upon very unusual ways.
+
+</li>
+
+<li>
+
+If you're concerned about the future of the economy in nearly any
+country in the world, you'll worry about the exploding costs of health
+care, driven by aging populations and new diagnostic techniques and
+treatments that provide astonishing advances in extending human life,
+but at great expense. Smart health technologies, together with patient
+engagement, can help those increases to level off.
+
+</li>
+
+<li>
+
+Everybody will feel the shift. Your interactions with this new health
+care system--and for the first time, we might really be able to ennoble
+our grab-bag of medical practices and technologies by calling them a
+"system"--will differ depending on whether you are young or old, live
+in a city or the country, are (currently) healthy or chronically
+ill--but the interaction will be very different from what most people
+have now.
+
+</li>
+
+</ul>
+
+<p>
+
+What are some of the changes coming over the horizon?
+
+</p>
+
+<ul>
+
+<li>
+
+Sensors are checking how elderly residents are moving around their
+homes, registering signs of inactivity that indicate ill health or
+patterns suggesting disorientation.
+
+</li>
+
+<li>
+
+Behavioral conditions are being treated by games that seem to produce
+lasting improvements, such as exposing victims of PTSD to situations
+that promote adaptation, or asking people with ADHD to performa task
+and throwing distractions at them.
+
+</li>
+
+<li>
+
+Large-scale data analysis of patient reactions to drugs turn up
+adverse effects that wre not found during clinical trials, and prompt
+reconsideration of the sterling trust placed in conventional trials.
+
+</li>
+
+<li>
+
+Electronic record exchange allows a patient to walk into a hospital
+hundreds of miles from where he has previously been treated and offer
+doctors a complete medical history, including key information such as
+drug allergies.
+
+</li>
+
+<li>
+
+Mobile phones allow people in isolated rural areas, even in developing
+nations, snap photos of medical problems or even measure vital signs
+and get advice from remote doctors.
+
+</li>
+
+<li>
+
+Researchers are starting to release not only articles about their
+research, but the data used to reach their conclusions, allowing other
+researchers to check their work and combine the data from multiple
+experiments.
+
+</li>
+
+</ul>
+
+<p>
+
+The technologies offer glowing possibilities, but suffer from complex
+problems that bedevil their application beyond proofs of
+concept. We'll now focus in on various areas.
+
+</p>
+
+<a name="device_sensor">
+<h2>Devices, sensors, and the patient-centered medical home</h2>
+</a>
+
+<p>
+
+The medical devices that normally come to mind are enormous, clanking
+machines that cost a million dollars or more. Their output tends to
+run through labs, radiologists, or other oracles that take several
+days to hand down results. But miniaturization is striking at medical
+equipment, as at other technologies, and are bringing health data into
+the hands of ordinary people.
+
+</p>
+
+<a name="qs_selves">
+<h3>From the Quantified Self to Our Selves</h3>
+</a>
+
+<p>
+
+Attendees at the
+high-profile <a href="http://www.washingtonpost.com/business/technology/consumer-electronics-show-will-highlight-new-ways-to-collect-biometric-data/2014/01/05/e8eac584-74c4-11e3-8def-a33011492df2_story.html">Consumer
+Electronics Show</a> at the beginning of 2014 lost themselves in a sea
+of personal monitoring devices. The field is on the verge of becoming
+mainstream,
+<a href="http://www.fiercemobileit.com/story/research-mobile-health-app-market-quadruple-2016/2011-11-30">with
+the use of apps to expand rapidly</a>, whether or not these particular
+early consumer devices take off.
+
+</p>
+<p>
+
+Trends include:
+
+</p>
+
+<ul>
+
+<li>
+
+Fitbits and other wearable measurement devices are <a
+href="http://www.mhealthnews.com/news/wearable-fitness-devices-see-historic-surge-popularity">surging
+in popularity</a>. Many of these measure not only activity, but
+health-related vital signs such as pulse, blood pressure, and oxygen
+consumption.
+
+</li>
+
+<li>
+
+Devices are becoming easier and friendlier to use. For instance,
+diabetes patients need to measure glucose levels to avoid fainting and
+other
+complications. <a href="http://www.medgadget.com/2013/10/non-invasive-measurement-of-blood-glucose-levels-using-glucotrack-interview.html">Non-invasive
+measurement devices</a> avoid the need to prick their
+skin. The <a href="http://theheartcheck.com/products/pen_device.html">HeartCheck
+Pen</a> is a small, pen-sized device that takes readings from the
+thumbs when they are both pressed onto the sensor pads.
+The <a href="http://bionym.com/"> Nymi</a> is a bracelet that measures
+one's ECG from the wrist and fingertip using a voltometer.
+
+</li>
+
+<li>
+
+Such things as wristbands or finger clips may soon come to seem
+quaintly awkward, with <a href="http://spie.org/x105127.xml">even
+greater compression along the way</a>. Reductions in size democratize
+medicine in many ways: by making devices cheaper, by making them more
+appealing and comfortable (a critical consideration for widespread
+adoption), and by reducing power requirements. Sensors to warn of
+concussions can be <a
+href="http://www.mhealthnews.com/news/remote-sensors-making-play-concussion-fray">worn
+under sports helmets</a> or embedded directly in them, although <a
+href="http://www.cnn.com/2013/11/15/health/youth-head-sensors/">their
+accuracy is disputed</a>.
+
+</li>
+
+<li>
+
+Sensors embedded in pill boxes can <a
+href="http://www.healthcareitnews.com/news/study-shows-promise-electronic-pill-bottle">notify
+doctors when the patients have taken their medication</a>. This can
+help clinicians remind patients and <a
+href="http://www.eurekalert.org/pub_releases/2013-03/acoc-prv030613.php">encourage
+medication adherence</a>, which is a major problem in maintaining
+health because so many patients forget their pills or need urging to
+sense the importance of keeping up the regimen. If smart packaging
+sounds like science fiction, just consider <a
+href="http://medicalxpress.com/news/2012-08-fda-electronic-chips-medications.html">ingestible
+pills</a> that work together with a body patch and a smart phone to
+signal when they're digested.
+
+</li>
+
+<li>
+
+Robots are
+being <a href="http://www.informationweek.com/mobile/10-medical-robots-that-could-change-healthcare/d/d-id/1107696">increasingly
+deployed in hospitals</a>, and will eventually turn up in the home as well.
+
+</li>
+
+</ul>
+
+<p>
+
+Although some people can benefit individually from reading and
+interpreting the displays on their devices, the data is most valuable
+when inserted into a patient record and combined with data from other
+users. In a patient record, the data can be <a
+href="http://strata.oreilly.com/2013/09/ginger-io-putting-the-patient-provider-connection-at-the-center.html">checked
+by clinical experts and be mined for trends</a>. Combining data from
+many users enables such benefits as group support and finding
+dangerous areas of divergence.
+
+</p>
+
+<a name="individual_home">
+<h3>The role of the individual</h3>
+</a>
+
+<p>
+
+Dueling trends are at work here. On the one hand, consumer devices is
+leading toward the <a
+href="http://www.bloomberg.com/news/2014-01-03/fitness-apps-eclipse-3-d-tvs-as-digital-health-reaches-ces-tech.html">
+vision expressed by health IT leader Samir Damani: "We are really
+moving from a doctor-centric society to a patient-centric
+society."</a> On the other, sensors can bring the clinic into the home
+in a rather intrusive way. Obviously, consumers will rebel against
+monitoring unless they feel like partners making their own health
+better with the aid of the clinician and technology.
+
+</p>
+<p>
+
+The latter trend leads to
+the <a href="http://ahier.blogspot.com/2009/10/patient-centered-medical-home.html">patient
+centered medical home</a> (PCMH), which enhances a person's
+environment to improve health. The technological core of the home are
+sensors that monitor patient behavior, tracking such things as whether
+the patient is moving around the house, how her weight changes each
+day, and whether she takes her medication. Research has even
+identified forms of movement that suggest disorientation.
+
+</p>
+<p>
+
+As we've seen, making the patient feel like an empowered partner in
+her care, rather than a disparaged target of snooping, is key to
+success. A PCMH works together with outreach by clinicians to keep a
+patient in her home. This can contribute considerably to quality of
+life improvements and the cost savings of keeping elderly people out
+of assisted care. Many PCMH initiatives depend on close human contact
+such as visiting nurses, with minimal technology. Studies show that <a
+href="http://www.hitconsultant.net/2013/09/11/rhode-island-patient-centered-medical-home-pilot-reduces-ed-visits/">these innovations
+reduce hospital admissions for chronically ill patients</a>, and
+particularly
+<a
+href="http://www.pcpcc.org/sites/default/files/1658_McCarthy_care_transitions_synthesis_v2.pdf">re-admissions
+within 30 days after being discharged from a hospital</a>, a measure
+that has excited hospital administrators ever since the Centers for
+Medicare &amp; Medicaid Services started in 2012 to penalize hospitals
+for such readmissions.
+
+</p>
+
+<p>
+
+And the home is not the only place that can join the clinic and the
+hospital as places where health coordination takes place--other
+important places in people's lives, such as <a
+href="http://www.healthit.gov/buzz-blog/beacon-community-program/beacon-support-childrens-health-lessons-learned/">schools</a>,
+can as well.
+
+</p>
+
+<p>
+
+What comes after the PCMH? Naturally,
+the <a href="http://www.govhealthit.com/news/cms-funded-medical-neighborhood-pilot-launch-month">patient-centered
+medical neighborhood</a>, which uses data about all the patients in a
+clinician's practice to draw conclusions about public health. This
+local use of data, however, just hints at the power made available by
+integrating data across societies, a theme we'll explore more under
+<a href="#aco_integrated">accountable care organizations</a>.
+
+</p>
+
+<a name="barrier_device">
+<h3>Barriers</h3>
+</a>
+
+<p>
+
+In addition to cultural aversion, the barriers that hold back adoption
+of sensor technologies include:
+
+</p>
+
+<dl>
+
+<dt>
+
+Cost
+
+</dt>
+
+<dd>
+
+If we can prevent emergency room visits or other costly treatments, a
+medical device comes cheap at almost any price. But no one can
+guarantee that they are so effective. In the meantime, most people
+still think twice before investing in them.
+
+</dd>
+
+<dt>
+
+Efficacy
+
+</dt>
+
+<dd>
+
+It takes a long time and a lot of money to establish that any medical
+treatment is safe and works better than a placebo. Small devices
+present fewer headaches than medications because they are unlikely to
+pose any safety problems, and experimental trials are much simpler
+than drug trials. Still, to line up people with the right combination
+of medical conditions, ensure they follow instructions, and measure
+effects (especially over a long time period) is a big job. We'll look
+at the challenges of clinical
+trials <a href="#clinical_research">later in this article</a>. Being
+poorly tested, most apps are not appealing or particularly effective,
+so <a href="http://www.mhealthnews.com/news/report-paints-grim-diabetes-app-use-mHealth-mobile">few
+of them are downloaded</a> by a lot of people, and far fewer are used
+over a long period of time.
+
+</dd>
+
+<dt>
+
+Simplicity
+
+</dt>
+
+<dd>
+
+Consumers who will spend days setting up a home entertainment center
+seem to lose patience when it comes to devices that improve their
+health. If the interface is more than a single button, many will give
+up at the start. Simplicity must also be the rule in displays.
+
+</dd>
+
+<dt>
+
+Integration
+
+</dt>
+
+<dd>
+
+Before data can be integrated into records and group databases, the
+records must be designed to accept patient data, and appropriate
+privacy controls must be in place. Few electronic health records
+currently accept data from patients. Furthermore, patients will be
+tempted to falsify data under some circumstances (such as when
+employee reward programs for health improvement are in place), so
+there must be technical measures to prevent tampering with device
+output. Established clinicians are <a
+href="http://www.hl7standards.com/blog/2014/01/09/pghd/">predisposed
+to mistrust patient data</a>.
+
+</dd>
+
+</dl>
+
+<a name="evidence_telemedicine">
+<h2>Evidence-based medicine, decision support, and telemedicine</h2>
+</a>
+
+<p>
+
+Doctors can't independently keep in their prefrontal cortexes all the
+information they need to suggest accurate diagnoses and
+treatments--even doctors (grudgingly) admit that, which is why
+specialists and consultations exist. How can computer technology
+augment all their intelligence?
+
+</p>
+
+<ul>
+
+<li>
+
+At the most basic level, electronic records emit alerts to warn
+doctors of entries that are inconsistent with the data in the records,
+such as when a patient has an allergy to a medication or the dose
+seems excessive. Other alerts get thrown at nursing staff constantly
+from cardiac monitors, intravenous delivery devices, and other
+equipment attached to patients.
+
+</li>
+
+<li>
+
+Electronic records can also suggest diagnostic codes and appropriate
+drugs in response to data entered.
+
+</li>
+
+<li>
+
+Records can generate reminders that patients should come in for
+follow-up visits, and flag patients at high risk
+
+</li>
+
+<li>
+
+Telemedicine allows experts anywhere in the world to weigh in on
+diagnosis. In many poor areas of the world lacking doctors, a patient
+take a picture of a condition with a cell phone and sends it to a
+doctor for evaluation. More commonly, a patient or doctor contacts the
+expert over an Internet video hook-up. The high end of telemedicine is
+the remote monitoring of ICU patients, which sounds sub-optimal but
+can <a href="http://www.ihealthbeat.org/articles/2013/12/6/study-icu-telehealth-use-can-boost-survival-rates-speed-discharge">actually
+do better by patients than depending on staff in the unit</a>. Social
+networks among doctors, which allow them to share stories and ask for
+expert advice, may also fall under the umbrella of telemedicine.
+
+</li>
+
+<li>
+
+The cutting edge of computer support has been experimental systems
+that generate diagnoses when fed patient histories. Such "expert
+systems" were tried in medicine as far back as the 1908s, but were not
+powerful enough to be successful. Still, with the enormous speed-up in
+computing and the rebirth of artificial intelligence in the
+twenty-first century, researchers are <a
+href="http://fdlaction.firedoglake.com/2013/02/12/the-computer-that-could-replace-your-doctor/">trying
+again</a> to see whether the doctor can be rendered superfluous. IBM's
+Watson, <a
+href="http://www.zdnet.com/ibm-forms-watson-business-group-will-commercialization-follow-7000024929/">which
+they started to commercialize in January 2014</a>, famously proved
+that natural language analysis can bring to the surface multiple
+plausible diagnoses for doctors to choose from.
+
+</li>
+
+</ul>
+
+<p>
+
+Clinical decision support, telemedicine and integrated care are the
+goals that excite reformers, but adequate electronic records must come
+before any of these things. So we'll look at each in turn.
+
+</p>
+
+<a name="ehr">
+<h3>Electronic records</h3>
+</a>
+
+<p>
+
+Walking into clinics where staff carry around paper records makes you
+feel like you caught an old 1930s movie and should be seeing the scene
+in black and white. Recently, superficial signs of progress have taken
+hold: the health field in the United States boasts about the
+increasing adoption of electronic records--particularly
+<a href="http://www.healthit.gov/sites/default/files/onc-data-brief-7-december-2012.pdf">since
+the roll-out of Meaningful Use incentives in 2009</a>. But don't jump
+to conclusions about the capabilities of new electronic systems: many
+are harder to use than the paper records they replace, and barely
+ahead of them in usefulness.
+
+</p>
+<p>
+
+Electronic health records follow an old 1980s model of software
+development:
+
+<ul>
+
+<li>
+
+They are entirely proprietary, although standards (which we'll look at
+shortly) have been superimposed and allow limited data sharing.
+
+</li>
+
+<li>
+
+Not being standards-based, they are expensive to develop, install and
+maintain. Their market is therefore large institutions with millions
+of dollars to spend on licenses and millions more on implementation.
+Until recently, they have totally bypassed the small community and
+rural hospitals and providers where digital records could have
+improved care.
+
+</li>
+
+<li>
+
+Even though every health institution is unique and adaption is
+critical, the record systems offer very few customizations (for
+instance, they allow the doctors to choose which alerts pop up).
+Serious changes require an investment in certified consultants or
+extra contracted work with the vendor, and enhancements take place on
+the vendor's schedule. A common complaint among doctors is that new
+EHR vendors act responsive and agile with their first customers, and
+then turn just as blank and bureaucratic as all the older vendors
+when success and growth come.
+
+</li>
+
+<li>
+
+Records are developed to meet the interests of the hospital and clinic
+administrators who make out the purchase orders, not the clinicians
+who ultimately have to use the system. These clinicians find the systems
+hard to use and incompatible with their workflows. No
+wonder <a href="http://www.upi.com/Health_News/2014/01/23/Doctors-spend-third-of-time-with-patients-looking-at-computer/UPI-79101390532163/">doctors
+</a>
+spend third of time with patients looking at computer</a>, imperiling
+their relationships with the patients (as we will see later, the core
+of medicine is the relationship).
+
+</li>
+
+<li>
+
+Designed as they are for administrators rather than clinicians, the
+EHRs' chief purpose is billing rather than treatment. Some of the
+"clinical decision support" built-in to these systems tell doctors how
+to find the codes that legally maximize the payment for a given course
+of treatment (a practice called up-coding).
+
+</li>
+
+<li>
+
+Although digitization in other industries such as e-commerce and
+finance has transformed them by making data exchange possible, the
+long proprietary history EHRs leave them stubbornly resistant to
+interoperability. The standards in this area have improved recently,
+as we'll see later in the paper. But currently, it is hard even for a
+patient to obtain his or her own records--a right enshrined in law
+through HIPAA.
+
+</li>
+
+</ul>
+
+<p>
+
+Utilized in smart ways, an electronic system can certainly improve
+care and lower costs:
+
+</p>
+
+<ul>
+
+<li>
+
+A patient web portal can allow clients to make appointments, check
+results of tests, check for errors in diagnoses or medication lists,
+and communicate with the staff for non-urgent questions. This is the
+simplest and most obvious application of digital technology in an age
+when most people can schedule car repairs and hotel reservations
+online, but it's surprising how few clinicians allow such basic online
+interaction.
+
+</li>
+
+<li>
+
+Clinical decision support suggests drugs that are commonly used to
+treat conditions, warns the doctor of patient allergies or drugs with
+adverse interactions, and makes other suggestions. Watson heralds a
+quantum leap in CDS, where the doctor is aided in diagnosis, but we
+have to
+take <a href="http://techcrunch.com/2012/01/10/doctors-or-algorithms/">predictions
+about the obsolescence of the doctor</a> with a grain of salt. As we
+shall see, though, doctors could certainly use back-ups from machine
+intelligence as well as specialists. Meanwhile, CDS has a downside:
+alert fatigue caused by the system blindly reporting every possible
+downside to using a medication.
+
+</li>
+
+<li>
+
+A digital system can help the staff intervene with patients, through
+such simple measures as reminding them to schedule and come to
+follow-up visits. These sorts of interventions can reduce the risk of
+hospitalization among high-risk patients, such
+<a href="http://www.fiercehealthit.com/story/tech-helps-control-diabetes-western-new-york-beacon-community/2013-12-12">those
+suffering from diabetes</a>. This is a clear example of technology
+that supports, instead of interfering with, the relationship between
+clinician and patient.
+
+</li>
+
+<li>
+
+Analysis of large data sets can turn up problems that help agencies
+improve public health. They can also reduce costs by helping
+hospitals identify and prioritize high-risk patients (a process called
+patient stratification).
+
+</li>
+
+</ul>
+
+<p>
+
+Some large institutions--notably the Department of Veterans Affairs,
+with its famous VistA software, and Kaiser Permanente--have
+historically created well-integrated systems that support improvements
+in patient health. This requires a long-term process, integrating all
+their hospital systems around the records and training all their
+clinicians to take advantage of the data they track. The institutions
+that do this have taken on a comprehensive role in the patient's
+lives, being responsible for insuring them as well as treating
+them. They represent the kind of all-encompassing, cradle-to-grave
+coverage that many developed countries do at a national level, and
+that we will look at <a href="#aco_integrated">under the topic of
+accountable care organizations</a>. According to one account, Kaiser
+Permanente's <a href="http://www.infoworld.com/d/the-industry-standard/how-kaiser-bet-4-billion-electronic-health-records-and-won-217731">four
+billion dollar expenditure on electronic health records</a> paid off.
+
+</p>
+<p>
+
+Another promising trend is the move to online records (Software as a
+Service, or SaaS). Companies such
+as <a href="http://www.athenahealth.com/">Athenahealth</a>
+and <a href="http://www.practicefusion.com">Practice Fusion</a>
+provide web-based records that tend to be popular among
+physicians. Because all patient data is stored in a centralized
+location, these companies can also look for trends in huge data
+sets. For instance, when the 2013 federal government shut-down forced
+the Centers for Disease Control to stop tracking incidents of the flu,
+<a href="http://www.athenahealth.com/blog/2013/10/04/athenaresearch-tracking-flu-activity-during-the-cdc-furlough/">Athenahealth
+filled the gap</a>. However, as we'll see, privacy is better protected
+if patients store data instead of either doctors or vendors.
+
+</p>
+
+<p>
+
+Many problems of EHRs are solved at lower cost through free
+software. Some of the free software or open source EHRs include
+<a href="http://openmrs.org/">OpenMRS</a>, <a href="http://www.openehr.org/">OpenEHR</a>,
+<a href="http://home.tolvenhealth.com/">Tolven</a>, <a href="http://oscarcanada.org/">OSCAR,
+and several variants of VistA, whose development is now coordinated by
+a foundation called <a href="http://www.osehra.org/">OSEHRA</a>. The
+low adoption rate for these open source alternatives (at least in the
+United States) has been ascribed to many different problems, ranging
+from sheer prejudice in the health care field to poor marketing.
+Certainly, many of these systems have academic or government origins,
+and therefore aren't backed by strong sales organizations. But it also
+may be that the EHR that truly makes life easy for clinicians has yet
+to be created.
+
+</p>
+
+<a name="telemedicine">
+<h3>Telemedicine</h3>
+</a>
+
+<p>
+
+This buzzword has been applied broadly to many aspects of health
+care. Examples include:
+
+</p>
+
+<ul>
+
+<li>
+
+Contacts by phone or text messages to remind patients of basic care,
+such as coming to doctor's appointments or taking their medication.
+Simple as these applications are, they are underused today. These
+rudimentary technologies can be used in very sophisticated ways,
+too. For instance, recruiting a family member to text a patient may
+produce a better outcome than receiving an impersonal text message
+from the clinic.
+
+</li>
+
+<li>
+
+Remote consultations. These may take place between a patient and a
+doctor, or between a doctor and a specialist. Although the use of
+video connections for mental health treatment were disparaged for a
+long time, some patients find it helpful. One intense variant of the
+remote consultation is
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/18305328">remote intensive
+care</a>. Intensive care units are laden with sensors, which can be
+monitored by experts outside the center just as easily as by nurses on
+the floor. Some studies suggest that remote ICU monitoring can save
+money and catch problems that would be missed by busy nurses present
+on the ICU.
+
+</li>
+
+<li>
+
+Patient centered medical homes, <a href="#individual_home">discussed
+earlier</a>.
+
+</li>
+
+</ul>
+
+<p>
+
+Remote medicine changes the health equation for people living in areas
+underserved by doctors, such as rural areas and developing
+nations. Ordinary residents of poor areas, even children, can be
+taught to run apps on a phone that walk them through questions that
+help determine what is wrong with a patient. They can also take photos
+of afflicted areas of the body and send them to doctors in cities
+better served by clinics.
+
+</p>
+
+<a name="ehr_barrier">
+<h3>Barriers</h3>
+</a>
+
+<p>
+
+Payments models need to change drastically to accommodate
+telemedicine. Currently, most payers won't even reward a doctor for
+using email or the telephone to advise a patient instead of requiring
+a visit to the office. But <a
+href="http://www.americantelemed.org/docs/default-source/policy/state-telemedicine-legislation-matrix.pdf">many
+states are preparing legislation to allow telemedicine</a>, and a
+<a
+href="http://www.healthcareitnews.com/news/new-bill-breaks-down-telehealth-barriers">simple
+bill introduced into Congress</a> would promote consultations with
+doctors over state lines. Because doctors are comfortable initiating
+consultations and patients in underserved areas crave contact with
+professionals, telemedicine should become very popular once the
+enabling factors are in place.
+
+</p>
+<p>
+
+Other barriers to the adoption of these technologies include:
+
+</p>
+
+<dt>
+
+Patient variability
+
+</dt>
+
+<dd>
+
+The intractable individuality of patients doomed the early expert
+systems. Nobody is a pure specimen of any single condition; everyone
+has complicating factors that require subtle weighings of
+possibilities. so no simple field can capture every nuance of patient
+behavior. For instance, a field in an electronic system indicating
+tobacco use would not reflect that a patient smoked for ten years and
+then quit. Diseases and conditions also interact in complex ways: for
+instance, knee injuries are related to obesity. Furthermore, the
+computer systems can't take into account that patients and doctors
+differ in their abilities to obtain, adhere to, pay for, and deliver
+treatments.
+
+</dd>
+
+<dt>
+
+Alert fatigue
+
+</dt>
+
+<dd>
+
+EHRs and hospital devices are programmed to react crudely to triggers,
+and the manufacturers have set the triggers to be extremely sensitive
+because they are so afraid of missing something important. The result
+is that a doctor cannot get through a write-up of a routine visit
+without clicking on innumerable dialog boxes to make them go away, and
+hospital wards are as noisy as tropical forests with the sound of
+beeps instead of animal calls. Although EHRs theoretically allow
+doctors to customize the alerts that appear, no one has yet created a
+truly intelligent alert system with acceptable levels both of false
+negatives (which should be zero) and false positives.
+
+</dd>
+
+<dt>
+
+Cost
+
+</dt>
+
+<dd>
+
+Good equipment for telemedicine can be expensive. Bandwidth for video
+hook-ups, for instance, is not universally available. And although an
+image may be sent to a clinician's cell phone, the phone's screen
+probably lacks sufficient resolution to show the necessary detail.
+
+</dd>
+
+</dl>
+
+<p>
+
+A feasible solution to the patient record problem would involve:
+
+</p>
+
+<dl>
+
+<dt>
+
+Free software
+
+</dt>
+
+<dd>
+
+A powerful open source EHR, widely adopted, would permit rapid
+innovation as new medical discoveries reveal the need for new data
+fields and interactions. Many projects larger than an EHR have been
+developed using free software methods, including Linux. It is
+noteworthy that
+<a href="http://arstechnica.com/information-technology/2013/09/google-and-samsung-soar-into-list-of-top-10-linux-contributors/">most
+Linux development is now contributed by large corporations</a>--Intel,
+IBM, Red Hat, Google, Samsung, and even Microsoft--who understand that
+investments in a robust, free system are paid back many-fold by other
+business opportunities. Hospitals and governments have even greater
+incentives to support open source in health.
+
+</dd>
+
+<dt>
+
+Application programming interfaces (APIs)
+
+<dd>
+
+Modern computing treats data sources as platforms on which other
+people can build applications. A standard interface allows innovators
+to flock to the underlying system and make it richer and more
+effective through add-on software. RESTful APIs are the most popular
+interfaces right now, and are supported by powerful libraries in
+nearly every programming language.
+
+</dd>
+
+<dt>
+
+Analytics
+
+</dt>
+
+<dd>
+
+Electronic records need to be useful if we expect them to be
+used. Their value comes from the information about patients and
+institutions that can be extracted through data analysis. Currently, the
+revolution in big data is entering health care through numerous small
+companies wielding mind-numbing statistical expertise. But until basic
+analyses become cheap and universal, records in most institutions will
+still have their secrets locked up inside.
+
+</dd>
+
+<dt>
+
+Patient control
+
+</dt>
+
+<dd>
+
+No one benefits as much as the patient from the convenience and
+predictive power of electronic records. As we'll see, patient control
+is not only feasible but a key to aiding research.
+
+</dd>
+
+</dl>
+
+<a name="data_exchange">
+<h2>Data exchange</h2>
+</a>
+
+<p>
+
+Now we need to consider some of the mechanics behind IT in
+health. There is one requirement behind nearly all the advances being
+promoted--behind clinical research, patient engagement, sensor data,
+telemedicine, and more: electronic data exchange. The health field
+needs the same flexible, powerful data exchanged used by other
+organizations all the time to carry out business and research
+collaborations.
+
+</p>
+<p>
+
+Without data exchange:
+
+</p>
+
+<ul>
+
+<li>
+
+Sensors are mostly useless--they cannot forward their information to a
+central storage point.
+
+</li>
+
+<li>
+
+Clinical research is restricted to what a single lab can do on its
+own. This limitation is throttling modern pharmaceutical companies and
+academic researchers in biology, who have made all the easy
+discoveries and are coming up with fewer and fewer products that pass
+FDA scrutiny.
+
+</li>
+
+<li>
+
+Patient engagement shrivels, because patients cannot learn what their
+doctors know about them or share information among providers.
+
+</li>
+
+<li>
+
+Telemedicine is blind, and becomes essentially impossible.
+
+</li>
+
+</ul>
+
+<p>
+
+But the two technologies that permit electronic data exchange in most
+fields are crippled in the health care field. Only in the past year or
+two have breakthroughs been made, and they are far from being put in
+place across providers:
+
+</p>
+
+<dl>
+
+<dt>
+
+Formats
+
+</dt>
+
+<dd>
+
+<p>
+
+In digital media, the format defines how bits are laid out in a
+document so someone can write a document on one side and someone else
+can read it on the other. In electronic health records, HL7 never
+provided a unified format; there were too many loopholes for putting
+data in odd places or defining proprietary fields. Furthermore,
+attempt to install a semi-modern convention, XML, was done by
+translating a rather ill-structured older format into XML, leaving it
+invalid and therefore hard to parse with standard XML tools.
+
+</p>
+<p>
+
+The Consolidated-Clinical Document Architecture (C-CDA) in 2011
+finally provided a more standard format supporting a wide range of
+clinical documents, and it was adopted as a requirement for supporting
+Meaningful Use, the government's program to promote adoption of
+electronic health records. It is a complex format (taking up a
+576-page draft specification) and still allows for proprietary
+extensions, a concession that is probably necessary to promote
+innovation.
+
+</p>
+
+</dd>
+
+<dt>
+
+Exchange protocols
+
+</dt>
+
+<dd>
+
+In digital transmissions, protocols are the rules for opening and
+closing connections, authenticating correspondents, and other
+mechanisms needed to make a connection. The first standard protocol
+defined in the health care
+field, <a href="http://www.connectopensource.org">CONNECT</a>, began
+as a government effort as late as 2008 and uses very heavy-weight
+elements such as SAML
+(see <a href="http://www.connectopensource.org/blog/2012-04-04-0000/how-did-we-implement-nationwide-health-information-network-specifications">the
+CONNECT site</a>) or UDDI
+(see <a href="http://www.omg.org/news/meetings/workshops/SOA-HC/presentations-10/13_E1_Riley.pdf">pages
+12-13 of this PDF</a>). Now the government is pulling the health care
+field behind two much more feasible
+standards, <a href="http://wiki.directproject.org/">Direct</a> for
+secure message exchange and
+<a href="http://www.directtrust.org/">DirectTrust</a> for creating an
+infrastructure that validates the users on each side of the exchange.
+
+</dd>
+
+</dl>
+
+<p>
+
+Current standards have by no means solved the data exchange problem.
+The C-CDA is designed for the exchange of large documents, as the D in
+its name suggests. But as people collect data from devices and send
+them to doctors, they need protocols and formats appropriate for tiny,
+frequent transmissions.
+
+</p>
+
+<a name="aco_integrated">
+<h3>Accountable care organizations and other integrated care</h3>
+</a>
+
+<p>
+
+The new religion in the health care field urges us to see people not
+as patients encountering the health care system through a set of
+discrete visits, but as full humans needing lifetime care. Indeed,
+this is the only way to treat chronic conditions, which are the health
+concerns of affluent nations. (As countries increase wealth, the
+health problems move more and more from acute conditions such as
+infections to chronic conditions such as heart failure and diabetes.)
+
+</p>
+
+<p>
+
+Most developing countries take responsibility for their entire
+populations over long periods of time, and therefore have frameworks
+that can handle (even if implemented imperfectly) integrated,
+long-term treatments of chronic conditions. Such systems exist in the
+United States as well--the Department of Veterans Affairs and Kaiser
+Permanente, mentioned earlier, and the Indian Health Services--but most
+US residents have care provided episodically by doctors and insurers
+that they may change without warning.
+
+</p>
+
+<p>
+
+The payment and policy issues created by this situation lie beyond the
+scope of this article, but we can certainly look at the IT that would
+be required by an integrated system.
+
+</p>
+
+<p>
+
+Thus, the biggest upheaval in American health care in the 2010s decade
+may be the attempt by the Centers for Medicare &amp; Medicaid Services
+to reorganize hospitals and clinics into consortia with comprehensive
+responsibility for patients'
+health. Called <a href="www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/ACO">accountable
+care organizations</a>, it encourages clinics and hospitals to combine
+and offer complete services to patients--in short, to act more like the
+Department of Veterans Affairs.
+
+</p>
+
+<p>
+
+CMS encourages ACOs to reduce costs through incentives that work
+against the old toxic model of paying for each visit. Each patient in
+a certain category (such as certain types of heart disease) is assumed
+to cost a certain amount to treat. The ACO is rewarded for keeping
+costs below this threshold. The plan is a step toward global payments,
+which pay the health provider a fixed sum to take care of an entire
+population.
+
+</p>
+
+<p>
+
+Determining how much a particular patient should "cost" is a difficult
+judgement that requires better data than we have now. Furthermore, the
+three-year period for which an ACO is considered responsible for a
+patient may not be long enough to see improvements in chronic
+conditions. But the problems with ACOs go deeper.
+
+</p>
+
+<p>
+
+A successful ACO meets
+the <a href="http://www.ihi.org/offerings/Initiatives/TripleAim/Pages/default.aspx">"triple
+aim"</a> in health care: improving the patient experience, achieving
+better health, and lowering costs. The ACO can reach these goals
+through such things as:
+
+</p>
+
+<ul>
+
+<li>
+
+Tracking the patient from primary care to specialist to hospital to
+physical therapist and so on, making sure the patient follows up on
+recommended treatments.
+
+</li>
+
+<li>
+
+Sharing a patient's records expeditiously among all the clinicians
+working with the patient.
+
+</li>
+
+<li>
+
+Crunching data about patient conditions and outcomes to find where
+treatments failed to achieve the desired result.
+
+</li>
+
+<li>
+
+Using this longitudinal data to predict trends, which helps them
+apportion resources more efficiently and even contributes to public
+health.
+
+</li>
+
+</ul>
+
+<p>
+
+Essentially, to be successful, an ACO has to exchange data seamlessly
+as the patient moves through the system. As we have seen, current EHRs
+are not capable of that. ACOs are also at constant risk because a
+patient always has the right to get care from someone outside the
+ACO. They need powerful incentives to keep each patient within their
+system. So the problems faced by ACOs are best solved on a more
+global level; each ACO lacks the wherewithal to solve it themselves.
+
+</p>
+
+<ul>
+
+<li>
+
+Data exchange requires robust, easy-to-implement standards that should
+be reached at a national or even international level. To glom together
+many local hospitals and clinics into ACO and expect it to harmonize
+their record systems is too much to ask. The problems of current ACOs
+show
+how <a href="http://ehrintelligence.com/2014/01/22/what-do-acos-reveal-about-the-importance-of-integration/">integration through data sharing is both critical and hard for them to achieve</a>.
+
+</li>
+
+<li>
+
+Decision support and public health are facilitated by huge data
+sets. The more institutions combine to exchange data, the more they
+can learn. As we shall see, a national public health plan could allow
+patients to store their own data and share it. Although some
+individual hospitals have learned valuable lessons by tracking their
+own data, and Kaiser Permanente has achieved a lot by exploiting its
+huge scale, a national system is far better than the data an ACO can
+collect.
+
+</li>
+
+</ul>
+
+<p>
+
+The perennial complaint of health reformers has been the isolation of
+data and decision making by individual doctors or institutions--data
+silos, as they are called. ACOs just create bigger silos where
+standards are needed instead. They also risk raising costs by creating
+larger, more powerful players--a risk CMS is apparently willing to take
+because of the chance they can lower costs through better
+coordination. But I consider ACOs an experiment whose lessons can be
+eventually applied in a national plan.
+
+</p>
+
+<a name="hie">
+<h3>Health information exchanges</h3>
+</a>
+
+<p>
+
+Long before the ACO model, a more idealistic vision of clinical
+cooperation existed under the name health information exchange
+(HIE). Of course, the Internet permits any two sites using the same
+protocol to exchange data, and the ultimate goal is to allow health
+data to be exchanged just as easily.
+
+</p>
+
+<p>
+
+The security of sensitive patient data is a concern here, and has
+often been used as an excuse for refusing to use HIE. But security
+shouldn't be any more of a problem than it is for financial
+information or sensitive corporate secrets, which have often been
+compromised but have still reached a point where most institutions
+depend on digital exchange. Indeed, clinicians use the Internet all
+the time for billing, the transmission of medical images, and other
+communications; it's only treatment for patients that gets short
+shrift.
+
+</p>
+
+<p>
+
+HIE has historically been tied up with expensive organizations that
+specialize in this area, which is like having to go to a special
+online broker to place your book order at Amazon.com. Because doctors
+had little incentive to give away the information they gathered about
+a patient, these organizations usually lasted only as long as a state
+agency,
+the <a href="http://www.hospitalemrandehr.com/2014/01/29/nyc-health-systems-get-7m-to-share-data">US
+government</a>, or some other outside funder was willing to pour
+millions of dollars into them. They depended on proprietary software
+and offered no added value over a fax machine. Worst of all, they
+violate patient trust by selling data, taking advantage of a loophole
+in HIPAA.
+
+</p>
+
+<p>
+
+The very existence of HIEs was predicated on two problems: the
+difficulty of translating documents between formats, and the
+difficulty of matching patients. Each EHR vendor presented data in a
+different format, as we have seen. So to serve hospitals
+using <em>N</em> different vendors, an HIE would either
+need <em>N</em><sup>2</sup> forms of translation software or develop
+its own internal format along with code to translate it to and from
+the format used by each vendor.
+
+The United States, unlike many countries, has no unique, universal
+identifier for residents; public fears have kept the government from
+creating one. Therefore, clinicians and HIEs use up to 17 different
+identifiers (such as name, address, and age) to figure out whether a
+patient seen by one hospital is currently at
+another. <a href="http://www.healthdatamanagement.com/blogs/what-hios-can-learn-from-the-onc-patient-matching-report-47152-1.html">Mistakes
+often cost lives</a>. The US government is working on a voluntary
+identification system
+call <a href="http://www.nist.gov/nstic/">Trusted Identities in
+Cyberspace (NSTIC)</a>, based on certificates not much different from
+those that validate web sites, but the system is far from ready.
+
+</p>
+<p>
+
+All this groaning infrastructure has been put in place so doctors can
+hoard data from their patients, exploiting it for marketing while
+preventing other doctors from using it to improve care. Naturally, it
+would be simpler just to leave data in patient hands. The patient
+would just point a doctor to her online records before a visit. To
+ward off those rare occasions when a patient is incoherent or
+unconscious (fears raised constantly by professionals opposed to
+patient control over data), patients could contain emergency phone
+numbers for relatives or other agents to whom they have granted access
+their records.
+
+</p>
+<p>
+
+Two factors have led to slightly more success in the HIE area.
+
+</p>
+
+<ul>
+
+<li>
+
+The CONNECT and Direct protocols discussed
+in <a href="#data_exchange"> the section on data exchange</a>, once
+they were supported by EHR vendors, allowed clinicians and HIEs to
+dispense with some of the complicated translation systems they
+previously needed.
+
+</li>
+
+<li>
+
+Some HIEs realize they must provide more value than simply shuttling
+data between health care providers. These more forward-looking
+organizations typically provide patient stratification to their
+clients, using their knowledge of patient diagnoses to identify
+at-risk patients. These are the key contributions of
+the <a href="http://www.healthit.gov/policy-researchers-implementers/beacon-community-program">Beacon
+Communities</a> set up by the government as testbeds for modern,
+coordinated care.
+
+</li>
+
+</ul>
+
+<p>
+
+Yet despite these
+advances, <a href="http://www.healthdatamanagement.com/news/hie-survey-offers-sobering-results-on-value-47151-1.html">few
+HIEs are surviving</a>. It is time to remove them from the equation
+and use standards such as Direct to enable data exchange between
+doctor and patient, or between doctors under the control of the
+patient.
+
+</p>
+
+<a name="open_data">
+<h3>Open data</h3>
+</a>
+
+<p>
+
+If ACOs and HIEs reveal the limitations of tentative steps toward integrated
+health care, the practice of releasing large data sets on patients
+illustrates the potential of integrated care--along with the risks to
+patient privacy.
+
+</p>
+
+<p>
+
+Every year, the US Department of Health and Human Services holds a
+large national forum dubbed the Health Datapalooza by Todd Park,
+former Department CTO. The forum highlights new data sets released by
+HHS and provides opportunities for activists as well as potential
+entrepreneurs to talk to HHS and each other about good uses to which
+they can put the data. It becomes a platform on which states can
+target high-risk areas, web sites can help patients choose health care
+providers, and other unanticipated value can arise. Other countries
+offering health data
+include <a href="http://www.theguardian.com/science/2014/jan/24/sharing-nhs-medical-records-healthcare">the
+United Kingdom</a>
+and <a href="http://www2.datasus.gov.br/DATASUS/index.php?area=02">Brazil</a>.
+
+</p>
+
+<p>
+
+Public data sets are problematic because it's becoming easier and
+easier to identify patients who are supposed be anonymous. Researcher
+Latanya Sweeney, who famously reidentified Massachusetts Governor
+William Weld from publicly available data, pulled off a similar feat
+in
+2013 <a href="http://www.businessweek.com/news/2013-06-05/states-hospital-data-for-sale-leaves-veteran-s-privacy-at-risk">using
+data from the state of Washington state</a>. Data providers can
+improve their anonymization techniques, but they are fighting a
+constant battle against sophisticated data mining algorithms and the
+increasing availability of data sets on ordinary people.
+
+</p>
+
+<p>
+
+So anonymization is hard to manage, but so are more basic technical
+issues. Organizations tend to collect data in self-contained databases
+and even spreadsheets. Although they could put up those spreadsheets
+and force users to download and disassemble them, friendlier data sets
+are converted to an entirely different format that allows simple
+programmatic access through a RESTful API. Creating and maintaining
+data in this format takes a big investment. It can't be done just
+once--new data must be incorporated quickly and accurately as it comes
+into the organization.
+
+</p>
+
+<a name="clinical_research">
+<h3>Revolutions in clinical research</h3>
+</a>
+
+<p>
+
+Big pharma is in trouble. These household names--Pfizer, Merck, Eli
+Lilly, Novartis, Bristol-Myers Squibb--that have historically been
+able lavish billions of dollars on advertising, wooing doctors,
+sponsoring conferences, and lobbying officials are reaching the end of
+flush times. They have apparently already invented all the easy drugs
+that treat large numbers of people for common ailments, so they now
+need to invest increasing sums to find more elusive compounds serving
+smaller populations.
+
+</p>
+
+<p>
+
+Compounding their distress is the
+<a href="http://www.businessweek.com/articles/2013-11-14/2014-outlook-big-pharma-drugs-going-off-patent">expiration
+of patents that use to allow them to charge high prices</a> through an
+effective monopoly on popular medications, and ever stricter
+requirements for clinical
+trials, <a href="http://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2805%2967712-4/fulltext">imposed
+by the FDA after disturbing safety lapses such the Vioxx case</a>.
+Finally, researchers are having so much trouble getting patients to
+sign up for trials that the lack of subjects is the reason behind the
+failure of
+<a href="http://finance.yahoo.com/news/doctors-too-few-cancer-patients-154156014.html">40% of cancer trials that don't run to completion</a>.
+
+</p>
+
+<p>
+
+Biotech hasn't produced a game-changing breakthrough that will unjam
+pharmaceutical research, so companies are starting to look with a
+newly creative eye at the clinical research process. They include:
+
+</p>
+
+<ul>
+
+<li>
+
+Looking for new incentives and means of outreach to increase the pool
+of patients willing to undergo trials.
+
+</li>
+
+<li>
+
+Giving patients more of a say in the conduct of trials.
+
+</li>
+
+<li>
+
+Expanding cooperation around research that they call
+"pre-competitive."
+
+</li>
+
+<li>
+
+<a href="http://www.forbes.com/sites/larryhusten/2014/01/30/johnson-johnson-will-share-clinical-trial-data/">Releasing
+data from clinical trials</a>, notably those trials that produce
+negative results most drug companies would rather not make public.
+
+</li>
+
+</ul>
+
+These all aim at a less top-down, more collaborative development
+process. Collaborative research requires data sharing, which in turn
+requires some agreement on formats and categorization of data.
+<a href="http://sagebase.org/about-2/">Sage Bionetworks</a> is one of
+the organizations promoting
+collaboration. A <a href="http://www.openhealthnews.com/resources/health-it-category/genomics-genetic-medicine">wide
+range of repositories</a>, such
+as <a href="http://cancergenome.nih.gov/">the Cancer Genome Atlas</a>,
+offer fodder for researchers.
+
+</p>
+
+<p>
+
+Data sharing can be a career-limiting move. For pharma companies, the
+risk is that someone will build a patentable compound on top of their
+research and steal their market. For researchers in the lab, the risk
+is having someone else publish first (rival researchers have been
+known to win or lose publication races by a few days). Perhaps the
+health field needs to broaden its range of awards, so that a patent or
+published paper is not the gold standard for advancing sales or
+careers.
+
+</p>
+
+<p>
+
+Meanwhile, a lot people have decided not to wait for clinical trials,
+because they cost millions and can't be rolled out for everything that
+interests patients. Their results often don't even apply to most
+patients, because the subjects of trials must be "ideal" patients who
+are healthy except for the condition the drug is meant to
+treat. Patients come together into organizations such
+as <a href="http://www.patientslikeme.com/">PatientsLikeMe</a>
+and <a href="https://www.23andme.com">23andMe</a> (which has had to
+suspend health-related activities after a dispute with the FDA over
+claims made for them) to upload their personal information for data
+mining that
+can <a href="http://www.nature.com/nbt/journal/v29/n5/full/nbt.1837.html">turn
+up trends long before clinical researchers could establish them
+formally</a>. These health sites are turbo-charged and data-driven
+upgrades to the forums that patients spontaneously form on social
+networks, and represent a digital form of
+disease-specific <a href="http://www.geneticalliance.org/">patient
+alliances</a>.
+
+</p>
+
+<p>
+
+Controversy exists over the collection of data from patients, even
+when it's voluntary, because this data tends to be used for market
+research and other activities patients might not support. Because the
+money spent to develop mobile are cannot be recouped through sales,
+and because HIPAA does not cover the apps (having been passed before
+the category existed), many
+developers <a href="http://www.kaiserhealthnews.org/Stories/2014/January/15/checking-your-blood-pressure-you-can-sell-your-personal-information.aspx">collect
+and resell data from users</a>. Patients also harbor quite reasonable
+fears, discussed under <a href="#open_data">the section on open
+data</a>, that a life insurance company, employer, or identity thief
+could deidentify the data and use it against the patient.
+<a href="http://patientprivacyrights.org/2005/02/testimony-of-dr-alan-f-westin-professor-of-public-law-government-emeritus-columbia-university-and-director-of-the-program-on-information-technology-health-records-and-privacy/">Widely
+cited research by law professor Alan Westin</a> shows that consumers
+worry about the safety of their patient data and want a say in where
+their data goes.
+
+</p>
+
+<p>
+
+It would be too cumbersome to make researchers return to all their
+research subjects to ask permission for every new use of data, but
+some method is needed to let patients grant permissions for certain
+kinds of research they support. Most patients do want their data used
+to improve health outcomes. The debate over patient data parallels
+that being conducted about the use of patient tissues and other
+physical samples. There are no clear answers, but only trade-offs to
+choose among.
+
+</p>
+
+<a name="data_exchange_barrier">
+<h3>Barriers</h3>
+</a>
+
+<p>
+
+The main barriers to data exchange are institutional decisions.
+Hospital and clinic administrators know that making data portable will
+make it easier for patients to find other providers. ACOs are formed
+to preserve the same competitive advantages while allowing care to
+improve. EHR vendors undermine interoperable standards for the sake of
+their clients as well as to preserve barriers to entry in their own
+markets. Pharmaceutical companies and clinical researchers guard
+secrets to further their careers.
+
+</p>
+
+<p>
+
+But even accounting for all those considerations, we also have to
+acknowledge technical barriers to the use of electronic records and
+health information exchange.
+
+</p>
+
+<ul>
+
+<li>
+
+As explained under <a href="#ehr_barrier">barriers to decision
+support</a>, people are inherently variable, so data exchange could be
+comparing apples to oranges.
+
+</li>
+
+<li>
+
+For the same reason, a lot of useful data enters the record in
+unstructured form, through free-form text. Natural language processing
+has been used to evaluate these records, but it's an inexact science.
+
+</li>
+
+<li>
+
+Data collected by researchers is just as variable as data from medical
+records. One researcher will collect data under different temperatures
+or other conditions from a researcher next door, or divide the data
+into different categories.
+
+</li>
+
+<li>
+
+Errors are rife in medical records. It has been estimated that
+everybody's record has errors. These weaken the validity of
+conclusions based on data processing. Luckily, statisticians and data
+scientists have developed algorithms to compensate for suspicious data
+fields.
+
+</li>
+
+<li>
+
+As mentioned under <a href="#barrier_device">barriers to the use of
+devices</a>, integrating information submitted by patients and their
+devices has its own challenges.
+
+</li>
+
+<li>
+
+There is no simple way, as discussed in
+the <a href="#clinical_research">section on clinical research</a>, to
+obtain flexible consent from patients for the use of their data.
+
+</li>
+
+</ul>
+
+<a name="engagement_games">
+<h2>Patient engagement and health-enhancing games</h2>
+</a>
+
+<p>
+
+Everything we've seen in health IT advances so far point to a bigger
+role for individuals in their own health care. Health experts like to
+talk about "patient engagement," a condescending term that suggests
+the doctor has all the answers but has to use a soft well to make
+stupid or recalcitrant patients comply. Patient advocates prefer the
+term "patient empowerment" and replay "compliance" with "adherence."
+The very term "patient," reeking of passivity and helplessness, irks
+some advocates,
+but <a href="http://strata.oreilly.com/2013/05/the-elusive-quest-to-transform-healthcare-through-patient-empowerment.html">other
+terms such "consumer" have problems too</a>.
+
+</p>
+
+<p>
+
+The psychological, organizational, and policy implications of patient
+empowerment (or even engagement) are huge, but this article focuses on
+the role of computing and data. How can health IT help move care to
+its new locus, the individual? We have already
+discussed <a href="#individual_home">patient-centered medical
+homes</a>, <a href="#qs_selves">Quantified Self</a>,
+and <a href="#clinical_research">openings in clinical_research</a>,
+but similar changes can suffuse through many other areas of the health
+care field.
+
+</p>
+
+<a name="gamification">
+<h3>Gamification</h3>
+</a>
+
+<p>
+
+One exciting area of health research is
+the <a href="http://strata.oreilly.com/2012/06/games-for-health-covers-curren.html">use
+of video games</a>. All types of games can be impressed into service
+in the pursuit of better health: mental challenges, role-playing games
+(sometimes for clinicians as well as patients), competitions, and even
+the old stand-by, first person shooter games.
+
+</p>
+
+<p>
+
+A game is an automated form of patient engagement, along the lines of
+text messages reminding them to take their medication, but infinitely
+more powerful. No one has to ask a patient to be engaged; with a game
+he chooses to be so.
+
+It may not be surprising that games can ameliorate mental conditions
+such as Attention Deficit Disorder or Post-Traumatic Stress
+Syndrome. Perhaps more thought-provoking is their role in helping
+<a href="http://www.mhealthnews.com/news/candy-crush-stroke-patients">stroke
+victims</a> and cancer patients recover. And
+the <a href="http://rockhealth.com/2013/07/games-for-health-the-latest/">combination
+of games and devices</a> creates a whole new playing field for medical
+research. For some people, games outperform medications in every way,
+proving in some conditions
+to <a href="http://www.mhealthnews.com/news/gamification-secret-cutting-care-costs-mHealth-mobile">cheaper</a>,
+more effective, less dangerous, longer-lasting in their effects--and
+of course more fun.
+
+</p>
+
+<p>
+
+Why do people love games? One explanation is that it makes them feel
+they're in control. This is a bit odd because every detail presented
+to them on the screen--assuming it's a video game--has been planned
+and programmed. Regardless of the truth, games seem the ultimate in
+putting the patient in control. Games also make maximum use of
+feedback loops, which people use in all areas of life (and health) to
+encourage positive thinking and behavior.
+
+</p>
+
+<a name="transparency">
+<h3>Transparency</h3>
+</a>
+
+<p>
+
+Economists and other observers of the health care industry understand
+that it is not a market. Most wish it was a market--a level playing
+field where patients knew the costs of care, the quality of the
+provider, and all their options. But in the United States, all too
+often:
+
+</p>
+
+<ul>
+
+<li>
+
+Not even the provider knows how much a patient will pay until the
+insurance company issues a statement, often after the procedure has
+taken place. Prices are set in secret negotiations between providers
+and insurers and vary among patients.
+
+</li>
+
+<li>
+
+Hospitals conceal the rate of complications, rehospitalizations, and
+deaths from procedures, and even though governments often collect such
+information, they rarely publicize it so that patients can compare
+doctors. Industry experts know quite well
+that <a href="http://capsules.kaiserhealthnews.org/index.php/2014/01/expensive-hospitals-strong-reputations-but-little-evidence-of-better-care-study-finds/">reputation
+is a poor guide to actual quality</a>. To top off the problem, patient
+ratings are mostly irrelevant, being based more on the quality of the
+food or the amount of noise in the corridor (not that these are
+unimportant) than the success or failure of procedures.
+
+</li>
+
+<li>
+
+Doctors try to present alternative treatments (including the
+alternative of no treatment) to patients, but it's hard to predict the
+relative success of each treatment. Genetic analysis in some cases can
+indicate what will work for a particular patient. Many new treatments
+come along that doctors aren't aware of. The success rate of more
+experimental treatments may be unknown.
+
+</li>
+
+</ul>
+
+<p>
+
+Governments have started
+<a href="https://data.medicare.gov/Nursing-Home-Compare/Quality-Measures-Short-Stay/u8my-ac5x">releasing
+data about hospital quality</a>, and some intrepid sites such
+as <a href="http://clearhealthcosts.com/">Clear Health Costs</a> use
+public data sets and crowdsourcing to build support for patients
+trying to compare costs. Some observers worry that making prices
+public will actually lead some facilities to raise prices. But when
+the day comes that everyone can see the price and outcome of popular
+procedures, the market will take over and crush institutions that are
+providing bad care or overcharging.
+
+</p>
+
+<a name="patient_control">
+<h3>Patient control over data</h3>
+</a>
+
+<p>
+
+What have seen in our tour through modern health care in this article?
+That patients can benefit from the output of sensors and monitoring,
+which is by definition their own data. That electronic records are the
+basis of better care, but that they're most secure and available when
+the patient has control over them. When you think about it, patient
+empowerment is meaningless without patient control over data.
+
+</p>
+
+<p>
+
+Two major projects have offered patients a place to keep their own
+health records: Google Health and
+<a href="https://www.healthvault.com/">Microsoft
+HealthVault</a>. Google closed its service because it wasn't taking
+off, and adopters of HealthVault are also fairly sparse. Many
+explanations for these lackluster results have circulated, some based
+on the services' ease of use or features and others on the resistance
+put up by doctors. In any case, it's clear something big has to change
+to <a href="https://www.youtube.com/watch?v=0gpk-fbfg4Y">give patients
+their damn data (video)</a>. One feature of the winning system is sure
+to be free software.
+
+</p>
+
+<p>
+
+Promising developments in the area include:
+
+</p>
+
+<dl>
+
+<dt>
+
+<a href="http://indivohealth.org/">Indivo</a> to store data
+
+</dt>
+
+<dd>
+
+An inspiration for Google Health and an actual source of some of
+HealthVault's source code, Indivo is a free software personal health
+record. It
+includes <a href="http://radar.oreilly.com/2012/06/clinician-researcher-and-patie.html">an
+API to let other EHRs upload data to it</a>--but no simple way to
+download data in bulk, because the developers' goal is leave data
+under the patient's control.
+
+</dd>
+
+<dt>
+
+<a href="http://www.healthit.gov/bluebutton">Blue Button</a> to
+download data from EHRs
+
+</dt>
+
+<dd>
+
+This project started at the Department of Veterans Affairs but has
+become a standard for the whole health industry. When it started, the
+project was simplicity itself: a patient could press a button on the
+health provider's web site and get a down-and-dirty, plain text list
+of his conditions, treatments and other facts. A more structured XML
+format has been developed to make the data friendly for apps as well
+as human readers.
+
+</dd>
+
+<dt>
+
+<a href="http://wiki.directproject.org/">Direct</a> for data exchange
+
+</dt>
+
+<dd>
+
+Introduced in the <a href="#data_exchange">data exchange section of
+this article</a>, Direct makes secure exchange of patient data
+possible even if both sides have nothing more sophisticated than
+email. Because encrypted email is so rare, most users will have to
+contract with a web site to protect the transmission, but they'll have
+to use it anyway to authenticate the person with whom they want to
+exchange data.
+
+</dd>
+
+</dl>
+
+<p>
+
+Patients have <a href="http://reginaholliday.blogspot.com/">been
+advocating for access to their records over many decades</a>, but
+technology is finally emerging to back up their demands. This article
+has hopefully suggested some of the revolutionary advances that the
+health care field can make when their demands are met.
+
+</p>
+
+<a name="closing">
+<h2>General closing thoughts</h2>
+</a>
+
+<p>
+
+It's no coincidence that President Obama--along with many other
+presidents
+from <a href="http://pediatrics.aappublications.org/content/127/3/399.full">Harry
+Truman</a>
+through <a href="http://www.princeton.edu/~starr/20starr.html">Bill
+Clinton</a>--made health care reform central to his administration.
+Americans are facing multiple health crises, whether from the effects
+of obesity or the tragedy of drug addiction. Health costs are
+bankrupting the nation--when people talk about the federal deficit,
+they are essentially referring to Medicare's expected payouts. And
+Americans are just plain terrified by the prospect of getting sick and
+not being able to get treatment.
+
+</p>
+
+<p>
+
+And although the United States ranks far higher than other nations in
+its health expenditures and far lower than other developed countries
+in its health, the problems are not limited to this country. The
+entire world is aging, while breakthroughs in treatments raise
+expectations for care.
+
+</p>
+
+<p>
+
+It is not within the scope of this article to discuss health care
+policy. As for fears that the Affordable Care Act will raise costs,
+I'll simply say--if you provide people with health insurance but don't
+actually make them healthier, sure, costs will go up.
+
+</p>
+
+<p>
+
+Thus, regardless of the fate of the ACA or of political controversies,
+it is critical for societies to make use of available data. Patients
+must get their data and must be encouraged to provide it to
+researchers. Analytics must be made widely available and used
+sensitively to reveal the places where health care can improve. The
+improvements may be as simple as a reminder phone call, as
+sophisticated as the identification of sick neighborhoods, or as
+dazzling as the discovery of new miracle drugs.
+
+</p>
+
+<p>
+
+In a health care field dominated by chronic illness, health lies in
+the hands of each of us. But we can't get better unless we work
+together. Sensors, data, electronic records, data sharing, and open
+source software are all part of that collaboration.
+
+</p>
+
+
+<hr title="Biographical information follows">
+
+<p>
+Andy Oram
+is an editor at O&#8217;Reilly Media.
+</p>
+
+<p>
+Author&#8217;s <a href="../index.html">home page</a><br />
+Other <a href="../professional/article.html">articles</a> in chronological order<br />
+<a href="../keyword/index.html">Index</a> to other articles</p>
+</body>
+</html>
