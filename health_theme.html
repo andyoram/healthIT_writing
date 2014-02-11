@@ -22,7 +22,7 @@
 <h1>Barriers and Pathways to Computing for Better Health Care</h1>
 
 <p>by Andrew Oram</p>
-<p>DRAFT 0.12, last updated 7 February 2014</p>
+<p>DRAFT 0.13, last updated 8 February 2014</p>
 
 <p>
 
@@ -42,7 +42,7 @@ Table of contents:
 <ul>
 <li><a href="#ehr">Electronic records</a></li>
 <li><a href="#open_data">Open data</a></li>
-<li><a href="#clinical_research">Revolutions in clinical research</a></li>
+<li><a href="#clinical_research">Reframing clinical research</a></li>
 <li><a href="#ehr_barrier">Barriers to using data</a></li>
 </ul>
 </li>
@@ -555,6 +555,23 @@ up at the start. Simplicity must also be the rule in displays.
 
 <dt>
 
+Overmeasurement
+
+</dt>
+
+<dd>
+
+People can become compulsive abou making measurements, and
+overinterpret changes from day to day or hour to hour. Measuring your
+blood pressure can raise your blood pressure! In general, throwing
+data into a bucket doesn't improve our knowledge; we should determine
+our goals first and then collect the data that we can process to help
+reach the goals.
+
+</dd>
+
+<dt>
+
 Integration
 
 </dt>
@@ -855,10 +872,10 @@ Better quality control
 <p>
 
 Electronic records definitely improve safety in some ways--such as
-eliminating confusion in handwritten notes, and warning of adverse reactions--but
-introduce other sources of error, such as choosing the drug that
-appears on a pull-down menu next to the one that was meant to be
-selected. There are plenty
+eliminating confusion in handwritten notes, and displaying warnings
+about adverse drug reactions--but introduce other sources of error,
+such as choosing the drug that appears on a pull-down menu next to the
+one that was meant to be selected. There are plenty
 of <a href="http://cci.drexel.edu/faculty/ssilverstein/cases/">stories
 concerning risks and failures in electronic health systems</a>. The
 Institute of Medicine (IOM) issued a major
@@ -895,13 +912,25 @@ Better user interfaces
 <p>
 
 Electronic health records are among the most notorious pieces of
-</software to use. As mentioned earlier, the people making purchase
-decisions are in administration. Some of the difficulties come from
-clinicians that are not used to computers (yes, quite a lot of them
-are in the field), from the urgency and chaos endemic to many
-medical environments, or to resistance of staff to give up poor
-workflows. But sometimes the system imposes its own rigid workflow
-without just cause.
+software to use. As mentioned earlier, the people making purchase
+decisions are in administration. The dissatisfaction that doctors
+express about their record systems
+is <a href="http://medicaleconomics.modernmedicine.com/medical-economics/news/physician-outcry-ehr-functionality-cost-will-shake-health-information-technol">well
+known</a>. Some of the difficulties come from clinicians that are not
+used to computers (yes, quite a lot of them are in the field), from
+the urgency and chaos endemic to many medical environments, or to
+resistance of staff to give up poor workflows. But sometimes the
+system imposes its own rigid workflow without just cause.
+
+</p>
+
+<p>
+
+Like industrial accidents and airplane crashes, medical errors
+generally emerge from complex interactions of many factors such as
+haste, misreported symptoms, and plain bad luck, where one factor may
+be an EHR that gets in the way, hides information behind multiple
+clicks, or has a garbled display.
 
 </p>
 
@@ -924,14 +953,14 @@ hope for universal health care in the US.
 The reporting requirements that the government and insurers add,
 potentially a boon for patient care and public health, create more
 work that is often redundant. For instance, stage 1 of Meaningful Use
-requires the doctor to report whether she checked the hemoglobin of
-each diabetic patient. The information that the patient has diabetes
-and that the lab ran a hemoglobin test is in the record, but the EHR
-doesn't take over the work of reporting it, requiring the doctor
-instead to explicitly report it. Such EHRs should not be certified as
-Meaningful Use compliant, but the certification authorities don't care
-any more than the EHR vendor whether the doctor's work in negatively
-impacted. No
+requires the doctor to report whether she checked the hemoglobin A1c
+of each diabetic patient. The information that the patient has
+diabetes and that the lab ran a hemoglobin test is in the record, but
+the EHR doesn't take over the work of reporting it, requiring the
+doctor instead to explicitly report it. Such EHRs should not be
+certified as Meaningful Use compliant, but the certification
+authorities don't care any more than the EHR vendor whether the
+doctor's work in negatively impacted. No
 wonder <a href="http://www.upi.com/Health_News/2014/01/23/Doctors-spend-third-of-time-with-patients-looking-at-computer/UPI-79101390532163/">doctors
 </a>
 spend third of time with patients looking at computer</a>, imperiling
@@ -1009,13 +1038,24 @@ software. Some of the free software or open source EHRs include
 <a href="http://openmrs.org/">OpenMRS</a>, <a href="http://www.openehr.org/">OpenEHR</a>,
 <a href="http://home.tolvenhealth.com/">Tolven</a>, <a href="http://oscarcanada.org/">OSCAR,
 and several variants of VistA, whose development is now coordinated by
-a foundation called <a href="http://www.osehra.org/">OSEHRA</a>. The
-low adoption rate for these open source alternatives (at least in the
-United States) has been blamed on disparate issues ranging from sheer
-prejudice in the health care field to poor marketing. Certainly, many
-of these systems have academic or government origins, and therefore
-aren't backed by strong sales organizations. But it also may be that
-an EHR that truly makes life easy for clinicians has yet to be
+a foundation
+called <a href="http://www.osehra.org/">OSEHRA</a>. Deployments of
+open source health records in developing nations
+are <a href="http://www.pih.org/blog/university-hospitals-open-source-emr-a-model-for-evidence-based-health-care">supported
+by Partners in Health</a>, among others.
+
+</p>
+
+<p>
+
+The low adoption rate for these open source alternatives (at least in
+the United States) has been blamed on disparate issues ranging from
+sheer prejudice in the health care field to poor marketing. Certainly,
+many of these systems have academic or government origins, and
+therefore aren't backed by strong sales organizations. VistA's
+dependency on MUMPS also dissuades enough potential developers that
+MUMPS wrappers have been created for other languages. But it also may
+be that an EHR that truly makes life easy for clinicians has yet to be
 created.
 
 </p>
@@ -1052,6 +1092,16 @@ and <a href="http://www2.datasus.gov.br/DATASUS/index.php?area=02">Brazil</a>.
 
 <p>
 
+Public agencies gather huge amounts of valuable data, but the release
+of their data may lag months behind the events they track. This can be
+blamed on the great efforts it takes to curate and clean that data,
+but also to bureaucracy, budgetary constraints, or persistent workflows
+based on pre-Internet ways of sharing data.
+
+</p>
+
+<p>
+
 The practice of releasing large data sets on patients illustrates the
 potential of integrated care--along with the risks to patient
 privacy. Public data sets may hold the secrets to improved medical
@@ -1083,7 +1133,7 @@ into the organization.
 </p>
 
 <a name="clinical_research">
-<h3>Revolutions in clinical research</h3>
+<h3>Reframing clinical research</h3>
 </a>
 
 <p>
@@ -1261,7 +1311,7 @@ Patient variability
 
 <dd>
 
-The intractable individuality of patients doomed the early expert
+The intractable individuality of patients doomed early expert
 systems. Nobody is a pure specimen of any single condition; everyone
 has complicating factors that require subtle weighings of
 possibilities. so no simple field can capture every nuance of patient
@@ -1290,7 +1340,11 @@ lot of useful data enters the record as free-form text. Natural
 language processing has been used to evaluate these records, but it's
 an inexact science. For instance, one can easily pick out the words
 "cocaine use," but miss that the phrase occurred in the context,
-"cocaine use proven not to be a factor."
+"cocaine use proven not to be a factor." Furthermore, even if doctors
+enter data into structured fields, the EHR software may provide
+several different fields that could plausibly store the data, so the
+same information for different patients may be in different places in
+the record.
 
 </dd>
 
@@ -1404,11 +1458,14 @@ Analytics
 
 Electronic records need to be useful if we expect them to be
 used. Their value comes from the information about patients and
-institutions that can be extracted through data analysis. Currently, the
-revolution in big data is entering health care through numerous small
-companies wielding mind-numbing statistical expertise. But until basic
-analyses become cheap and universal, records in most institutions will
-still have their secrets locked up inside.
+institutions that can be extracted through data analysis. Currently,
+"big data" (a convenient catch-all phrase for the enhanced statistical
+techniques now being used to explore correlations among large and
+often relatively unstructured data sets) is entering health care
+through numerous small companies wielding mind-numbing analytical
+expertise. But until basic analyses become cheap and universal,
+records in most institutions will still have their secrets locked up
+inside.
 
 </dd>
 
@@ -1662,6 +1719,8 @@ Exchange protocols
 
 <dd>
 
+<p>
+
 In digital transmissions, protocols are the rules for opening and
 closing connections, authenticating correspondents, and other
 mechanisms needed to make a connection. The first standard protocol
@@ -1672,7 +1731,15 @@ elements such as SAML
 (see <a href="http://www.connectopensource.org/blog/2012-04-04-0000/how-did-we-implement-nationwide-health-information-network-specifications">the
 CONNECT site</a>) or UDDI
 (see <a href="http://www.omg.org/news/meetings/workshops/SOA-HC/presentations-10/13_E1_Riley.pdf">pages
-12-13 of this PDF</a>). Now the government is pulling the health care
+12-13 of this PDF</a>).  Similarly complex and little-used SOAP
+technologies <a href="http://wiki.ihe.net/index.php?title=XDS.b_Implementation">underlie
+the data exchange standard</a> used by institutions to share health records.
+
+</p>
+
+<p>
+
+Now the government is pulling the health care
 field behind two much more feasible
 standards, <a href="http://wiki.directproject.org/">Direct</a> for
 secure message exchange and
@@ -1681,6 +1748,8 @@ infrastructure that validates the users on each side of the exchange.
 These do not guarantee, however, that doctors (and much less patients)
 can exchange records,
 because <a href="http://thehealthcareblog.com/blog/2014/02/01/teach-your-emr-to-do-email-impossible-maybe-not/">large organizations may block attempts at authentication</a>.
+
+</p>
 
 </dd>
 
@@ -1767,9 +1836,18 @@ identity theft and surveillance have kept the government from
 enforcing the law. Therefore, clinicians and HIEs use up to 17
 different identifiers (such as name, address, and age) to figure out
 whether a patient seen by one hospital is currently at
-another. <a href="http://www.healthdatamanagement.com/blogs/what-hios-can-learn-from-the-onc-patient-matching-report-47152-1.html">Mistakes
-often cost lives</a>. The US government is working on a voluntary
-identification system
+another. http://www.ihe.net/technical_framework/upload/ihe_iti_suppl_pix_pdq_hl7v3_rev2-1_ti_2010-08-10.pdf">153-page
+specification</a> defines the Patient Demographic Query and Patient
+Identifier Cross-Reference standards that institutions use
+to <a href="http://www.openempi.org/confluence/pages/viewpage.action?pageId=2654507">query
+about patients and make the
+match</a>. <a href="http://www.healthdatamanagement.com/blogs/what-hios-can-learn-from-the-onc-patient-matching-report-47152-1.html">Mistakes
+often cost lives</a>.
+
+</p>
+<p>
+
+The US government is working on a voluntary identification system
 call <a href="http://www.nist.gov/nstic/">Trusted Identities in
 Cyberspace (NSTIC)</a>, based on certificates not much different from
 those that validate web sites, but the system is far from ready.
@@ -1839,14 +1917,14 @@ patient.
 
 <p>
 
-Most developing countries take responsibility for their entire
+Most developed countries take responsibility for their entire
 populations over long periods of time, and therefore have frameworks
 that can handle (even if implemented imperfectly) integrated,
 long-term treatments of chronic conditions. Such systems exist in the
 United States as well--the Department of Veterans Affairs and Kaiser
-Permanente, mentioned earlier, and the Indian Health Services--but most
-US residents have care provided episodically by doctors and insurers
-that they may change without warning.
+Permanente, mentioned earlier, and the Indian Health Services--but
+most US residents have care provided episodically by doctors and
+insurers that they may change without warning.
 
 </p>
 
@@ -1989,12 +2067,12 @@ how <a href="http://ehrintelligence.com/2014/01/22/what-do-acos-reveal-about-the
 
 Decision support and public health are facilitated by huge data
 sets. The more institutions combine to exchange data, the more they
-can learn. As we shall see, a national public health plan could allow
-patients to store their own data and share it. Although some
-individual hospitals have learned valuable lessons by tracking their
-own data, and Kaiser Permanente has achieved a lot by exploiting its
-huge scale, a national system is far better than the data an ACO can
-collect.
+can learn. As we shall see, a national public health plan could be
+built on data stored by patients shared at their discretion. Although
+some individual hospitals have learned valuable lessons by tracking
+their own data, and Kaiser Permanente has achieved a lot by exploiting
+its huge scale, a national system is far better than the data an ACO
+can collect.
 
 </li>
 
@@ -2083,7 +2161,9 @@ nations. Ordinary residents of poor areas, even children, can be
 taught to run apps on a phone that walk them through questions that
 help determine what is wrong with a patient. They can also take photos
 of afflicted areas of the body and send them to doctors in cities
-better served by clinics.
+better served by clinics. One example is a
+<a href="http://www.bbc.co.uk/news/health-25986841">modified mobile
+phone</a> that can take pictures of the eye</a>.
 
 </p>
 
@@ -2307,6 +2387,14 @@ maximum use of feedback loops, which people use in all areas of life
 
 </p>
 
+<p>
+
+Many games are also social. One can compete with others for
+achievements and at the same time feel spurred on by their support and
+cameraderie to make behavior changes.
+
+</p>
+
 <a name="transparency">
 <h3>Transparency</h3>
 </a>
@@ -2397,17 +2485,18 @@ health records: Google Health and
 HealthVault</a>. Google closed its service because it wasn't taking
 off, and adopters of HealthVault are also fairly sparse. Many
 explanations for these lackluster results have circulated, some based
-on the services' ease of use or features and others on the resistance
-put up by doctors. In any case, it's clear something big has to change
+on the services' difficulty of use or lack of features, others based
+on the resistance put up by doctors. In any case, it's clear something
+big has to change
 to <a href="https://www.youtube.com/watch?v=0gpk-fbfg4Y">give patients
-their damn data (video)</a>. One feature of the winning system is sure
-to be free software.
+their damn data (video)</a>.
 
 </p>
 
 <p>
 
-Promising developments in the area include:
+One feature of the winning system is sure to be free software, which
+already offers several promising developments:
 
 </p>
 
@@ -2480,6 +2569,32 @@ countries for many years, may also work in tandem with personal health
 records, making it
 <a href="http://www.healthitoutcomes.com/doc/a-strong-case-for-smart-cards-in-healthcare-0001">easy for patients to bring their data to many health
 providers</a>.
+
+</p>
+
+<p>
+
+But even if someone weaves all these technologies into an appealing
+and usable patient record, how can patients be encouraged to use the
+records, and doctors encouraged to consult them? The key to progress
+returns, perhaps, to the very first element of health reform listed in
+this article: sensors worn by patients to preserve their observations
+of daily living. Such data could grow in value to become
+indispensable, whereupon doctors and their EHRs will have to open up
+to patient records.
+
+</p>
+
+<p>
+
+Several leading health IT groups have
+<a href="http://mobihealthnews.com/27825/industry-groups-to-hhs-include-patient-generated-data-in-mu-stage-3/">asked
+the Department of Health and Human Services</a> to require health
+providers to accept patient data in Stage 3 of Meaningful Use.  But
+because consumer devices also report their results to data silos
+maintained by the device's vendor, the patient must also be able to
+run a simple program to capture the data, either from the device or
+from the vendor's site.
 
 </p>
 
