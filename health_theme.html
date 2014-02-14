@@ -61,6 +61,7 @@ Table of contents:
 </li>
 <li><a href="#engagement_games">Patient engagement and health-enhancing games</a>
 <ul>
+<li><a href="#without_doctor">Health Care without a doctor</a></li>
 <li><a href="#gamification">Gamification</a></li>
 <li><a href="#transparency">Transparency</a></li>
 <li><a href="#patient_control">Patient control over data</a></li>
@@ -581,12 +582,11 @@ Overmeasurement
 
 <dd>
 
-People can become compulsive abou making measurements, and
-overinterpret changes from day to day or hour to hour. Measuring your
-blood pressure can raise your blood pressure! In general, throwing
-data into a bucket doesn't improve our knowledge; we should determine
-our goals first and then collect the data that we can process to help
-reach the goals.
+People can get compulsive when measuring themselves, and overinterpret
+changes from day to day or hour to hour. Measuring your blood pressure
+can raise your blood pressure! In general, throwing data into a bucket
+doesn't improve our knowledge; we should determine our goals first and
+then collect the data that we can process to help reach the goals.
 
 </dd>
 
@@ -684,7 +684,7 @@ useful.
 
 In the United States, virtually every doctor uses electronic records
 and exchange for billing, because money is the lifeblood of both the
-health practices and the payors. But other activities, even something
+health practices and the payers. But other activities, even something
 as basic as ordering a prescription from a pharmacy is done manually.
 
 </p>
@@ -793,9 +793,14 @@ interaction.
 <li>
 
 Analysis of large data sets can turn up problems that help agencies
-improve public health. They can also reduce costs by helping
-hospitals identify and prioritize high-risk patients (a process called
-patient stratification).
+improve public health. They can also reduce costs by helping hospitals
+identify and prioritize high-risk patients (a process called patient
+stratification). They also allow payers to define
+<a href="http://www.ncsl.org/portals/1/documents/health/EPISODE_of_CARE-2010.pdf">"episodes
+of care"</> that supposedly encompass all the treatment a patient
+needed for a particular problem. This in turn lets payers define how
+much the health providers should be reimbursed for treating various
+patients with the same condition.
 
 </li>
 
@@ -921,6 +926,79 @@ join their fellow prisoners among earlier adopters.
 
 <p>
 
+Errors can also be introduced by electronic records, as many
+of <a href="http://cci.drexel.edu/faculty/ssilverstein/cases/">stories
+attest</a>. The Institute of Medicine (IOM) issued a major
+<a href="http://www.iom.edu/Reports/2011/Health-IT-and-Patient-Safety-Building-Safer-Systems-for-Better-Care.aspx">report
+warning about safety problems in November 2011, the Agency for
+Healthcare Research and Quality prepared
+a <a href="http://healthit.ahrq.gov/sites/default/files/docs/citation/HealthITHazardManagerFinalReport.pdf">report
+on tracking and assessing risks in electronic health systems</a> in
+May 2012 (a summary of risks appears on page 29), and the Office of
+the National Coordinator (which is responsible for administering the
+government's electronic health record program) released
+<a href="http://www.healthit.gov/policy-researchers-implementers/safer">extensive
+safety guidelines in January 2014</a>.  Besides plain and simple
+bugs--for which the vendor denies liability--problems include:
+
+</p>
+
+<ul>
+
+<li>
+
+Confusing interfaces that make it seem some information was recorded
+when it was not, or the reverse.
+
+</li>
+
+<li>
+
+Records that allow similar information in two or more places, thus
+creating such risks as duplicate dosages. This can certainly happen
+with paper records too, but electronic records hide the duplication
+better and staff are less likely to know that duplicate locations
+exist.
+
+</li>
+
+<li>
+
+Information that is hard to see, perhaps simply because it is outside
+the visible part of the page and the clinician forgets to scroll the
+screen.
+
+</li>
+
+<li>
+
+Images that are distorted or have text overlaid in the wrong places.
+
+</li>
+
+<li>
+
+Unauthorized sharing of patient data.
+
+</li>
+
+</ul>
+
+<p>
+
+Errors in electronic records also tend to propagate. In such cases,
+one of the traits that makes them most valuable--data sharing--turns
+into a vulnerability. And a data breach with EHRs can put millions of
+patients at risk in one fell swoop, as front-page news reports also
+remind us regularly. Some doctors would like the FDA to regulate
+electronic records in hospitals somewhat as it regulates clinical
+trials, claiming that increased costs are worth the problems that
+would be averted.
+
+</p>
+
+<p>
+
 Pathways toward improving electronic records include:
 
 </p>
@@ -941,16 +1019,7 @@ Electronic record systems definitely improve safety in some ways--such
 as eliminating confusion in handwritten notes, and displaying warnings
 about adverse drug reactions--but introduce other sources of error,
 such as choosing the drug that appears on a pull-down menu next to the
-one that was meant to be selected. There are plenty
-of <a href="http://cci.drexel.edu/faculty/ssilverstein/cases/">stories
-concerning risks and failures in electronic health systems</a>. The
-Institute of Medicine (IOM) issued a major
-<a href="http://www.iom.edu/Reports/2011/Health-IT-and-Patient-Safety-Building-Safer-Systems-for-Better-Care.aspx">report
-warning about safety problems in November 2011, and the Office of the
-National Coordinator (which is responsible for administering the
-government's electronic health record program) released
-<a href="http://www.healthit.gov/policy-researchers-implementers/safer">extensive
-safety guidelines in January 2014</a>.
+one that was meant to be selected.
 
 </p>
 
@@ -1007,7 +1076,7 @@ see and do not respect the value of her time. For instance,
 instructions that were added by a clinician to the software are
 printed out as part of the record, probably by a programmer who
 couldn't tell the difference between instructions and patient
-information. Awkwardnesses like this drain precious time from the
+information. Such awkward interfaces drain precious time from the
 physicians' day, reducing the time they can spend with patients and
 contributing to the serious shortage of physicians that threatens the
 hope for universal health care in the US.
@@ -1272,7 +1341,6 @@ appearing in the research ivory tower
 through <a href="http://www.kevinmd.com/blog/2014/02/crowdsourcing-develop-clinical-trials.html">crowdsourcing
 suggestions</a> such as submitting drafts for clinical trials for
 public scrutiny, and even letting patients suggest trials.
-
 
 </li>
 
@@ -1632,13 +1700,12 @@ interactions between medical conditions.
 
 <p>
 
-
-A superior way to approach intersecting diseases may be to represent
-diagnoses for individual diseases in the standard (at whatever level
-of detail researchers find useful) but create links between diseases,
-so that a doctor can indicate that one condition has caused,
-exacerbated, or hidden another. The Semantic Web is an example of how
-this can be done,
+A superior way to approach intersecting diseases may be for a standard
+to represent diagnoses for individual diseases (at whatever level of
+detail researchers find useful) but create links between diseases, so
+that a doctor can indicate that one condition has caused, exacerbated,
+or hidden another. The Semantic Web is an example of how this can be
+done,
 and <a href="https://dkm.fbk.eu/index.php/ICD-10_Ontology">ontologies
 for ICD-10 already exist</a>. Of course, representing relationships
 will still be a complicated task, and better tools for doctors and
@@ -1920,7 +1987,7 @@ the <a href="http://www.hospitalemrandehr.com/2014/01/29/nyc-health-systems-get-
 government</a>, or some other outside funder was willing to pour
 millions of dollars into them. HIEs depended on proprietary software
 and offered no added value over a fax machine. Worst of all, they
-violate patient trust by selling data, taking advantage of a loophole
+violated patient trust by selling data, taking advantage of a loophole
 in
 HIPAA. <a href="http://ehrintelligence.com/2013/12/20/health-information-exchange-grew-by-leaps-and-bounds-in-2013/">Recent
 efforts to rescue the concept</a> still don't show long-term
@@ -1937,7 +2004,10 @@ different format, as we have seen. So to serve hospitals
 using <em>N</em> different vendors, an HIE would either
 need <em>N</em><sup>2</sup> forms of translation software or develop
 its own internal format along with code to translate it to and from
-the format used by each vendor.
+the format used by each vendor. Just to integrate systems within a
+single institution, hospitals may pay specialized vendors tens of
+millions of dollars to do what takes a few dozen lines of code and
+some standard software libraries in other industries.
 
 </p>
 
@@ -2234,11 +2304,6 @@ care. Examples include:
 
 Contacts by phone or text messages to remind patients of basic care,
 such as coming to doctor's appointments or taking their medication.
-Some don't involve clinicians: for instance, a number of mobile
-apps <a href="http://www.fiercehealthit.com/special-reports/7-health-technologies-veterans-mobile-apps">help
-veterans manage stress and mood<a>, while several apps such
-as <a href="http://stompstaging.telus-nas.com/FAQ.aspx">STOMP</a>
-offer regular encouragement to tobacco smokers who want to quit.
 <a href="https://app.preventnow.com/how_it_works">Prevent</a> goes
 farther, linking people at risk for diabetes with coaches and other
 participants over a mobile device. Rudimentary technologies can be
@@ -2252,6 +2317,7 @@ an impersonal text message from the clinic.
 
 Remote consultations. These may take place between a patient and a
 doctor, or between a doctor and a specialist. Although the use of
+
 video connections for mental health treatment were disparaged for a
 long time, some patients find it helpful. One intense variant of the
 remote consultation is
@@ -2358,7 +2424,7 @@ side, regulations were
 recently updated to ensure that
 <a href="http://www.hhs.gov/ocr/privacy/hipaa/understanding/coveredentities/businessassociates.html">business
 associate to whom health providers gave patient data had to comply
-with the law</a>. Businss associates are companies to which health
+with the law</a>. Business associates are companies to which health
 provider outsource things such as billing and analytics, and who
 should not be taking advantage of the patient data given to them for
 other purposes.
@@ -2453,12 +2519,37 @@ care field.
 
 </p>
 
+<a name="without_doctor">
+<h3>Health care without a doctor</h3>
+</a>
+
 <p>
 
-People often use social networking sites such as Facebook, which are
-already familiar to them, to form communities around health
-issues. Others choose specialized sites, such as
-PatientsLikeMe. People can
+Insensitive doctors sometimes act as if the patient was not a
+factor. People are turning the tables now, engaging in many
+health-related activities without involving clinicians. And today's
+technology is replete with playthings and baubles for the motivated
+individual--often acting in collaboration with peers. But they can
+show real benefits.
+
+</p>
+
+<p>
+
+For instance, a number of mobile
+apps <a href="http://www.fiercehealthit.com/special-reports/7-health-technologies-veterans-mobile-apps">help
+veterans manage stress and mood<a>, while several apps such
+as <a href="http://stompstaging.telus-nas.com/FAQ.aspx">STOMP</a>
+offer regular encouragement to tobacco smokers who want to quit.
+Games improving brain performance are a particularly popular niche.
+
+</p>
+
+<p>
+
+People often use social networking sites with which they are already
+familiar, such as Facebook, to form communities around health issues.
+Others choose specialized sites, such as PatientsLikeMe. People can
 even <a href="https://www.hulahq.com/">share test results with
 potential sexual partners</a> to provide assurances they are free of
 STDs.
@@ -2611,6 +2702,20 @@ empowerment is meaningless without patient control over data.
 
 <p>
 
+As mentioned earlier, doctors routinely ignore the legal requirement
+to show patients their health
+records. The <a href="http://www.myopennotes.org/what-is-opennotes-2/">OpenNotes</a>
+advocacy organization
+found <a href="http://annals.org/article.aspx?articleid=1363511">several
+advantages to providing simple patient portals</a>, such as patients
+taking their prescribed medications more often. But a patient portal
+is still not as empowering as records that patients maintain
+themselves.
+
+</p>
+
+<p>
+
 Two major projects have offered patients a place to keep their own
 health records: Google Health and
 <a href="https://www.healthvault.com/">Microsoft
@@ -2745,7 +2850,7 @@ setting.
 Patients have <a href="http://reginaholliday.blogspot.com/">been
 advocating for access to their records for many decades</a>, but
 technology is finally emerging to back up their demands. This article
-has hopefully suggested some of the revolutionary advances that the
+has hopefully suggested some of the significant advances that the
 health care field can make when their demands are met.
 
 </p>
@@ -2858,7 +2963,6 @@ together. Sensors, data, electronic records, data sharing, and open
 source software are all part of that collaboration.
 
 </p>
-
 
 <hr title="Biographical information follows">
 
